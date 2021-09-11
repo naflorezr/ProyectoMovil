@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">AppViajes</string>
-    <string name="lugar">Termales del Ruiz</string>
-    <string name="descripcion">Ubicados en el Parque Nacional Natural de los Nevados, a 3500 metros de altura sobre el nivel del mar, a sólo 10 km del Nevado del Ruíz y 36 km de Manizales. Con una ubicación privilegiada y un paisaje impactante por la belleza natural que posee, espectacular vista a la ciudad de Manizales, y una noche de firmamento con variedad de azules lleno de estrellas en conjunto con la luna a un paso de las nubes.</string>
-    <string name="temperatura">min 3°C max 10°C</string>
-    <string name="ubicación">Manizales - Caldas</string>
-    <string name="recomendaciones">Piscina termal - Sendero Ecológico - Camino de los colibries</string>
-</resources>
