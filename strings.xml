@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TIBASOSA</string>
+    <string name="title">TIBASOSA</string>
+    <string name="location">Localización</string>
+    <string name="locations">Tibasosa es un municipio colombiano del departamento de Boyacá, situado en el centro-oriente de Colombia, en la región del Alto Chicamocha.</string>
+    <string name="Time">Tiempo</string>
+    <string name="temperature">18 °C, viento del E a 13 km/h, humedad del 61 %</string>
+    <string name="sites">sitios de interes</string>
+    <string name="site">Parque central, Finca Guatica, Cerro de Bolivar.</string>
+</resources>
+
