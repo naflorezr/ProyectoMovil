@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColombiaDiversa">
         <activity
+            android:name=".RioGuejarActivity"
+            android:exported="true" />
+        <activity
             android:name=".TermalesActivity"
             android:exported="true" />
         <activity

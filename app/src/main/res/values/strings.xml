@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ColombiaDiversa</string>
+    <string name="Description_title">Descripción</string>
+    <string name="Description">Río de aguas claras y lecho rocoso enclavado en un cañon formado en la Sierra de La Macarena. Lugar de naturaleza y belleza exuberante.</string>
+    <string name="Location">Mesetas y San Juan de Arama, Departamento del Meta</string>
+    <string name="Location_title">Ubicación</string>
+    <string name="Temperature_title">Temperatura</string>
+    <string name="Temperature">Entre 20 y 35°C</string>
+    <string name="Activities_title">Actividades recomendadas</string>
+    <string name="Activities">Bañarse en el río, canotaje, pesca deportiva, acampar.</string>
+    <string name="todo">TODO</string>
+    <string name="Button">Regresar</string>
 </resources>
