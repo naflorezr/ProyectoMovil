@@ -14,8 +14,8 @@
         android:text="@string/Name_Guejar"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="7dp" />
 
     <ImageView
         android:id="@+id/imageView"
