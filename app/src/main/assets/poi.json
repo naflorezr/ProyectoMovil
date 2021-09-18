@@ -1,0 +1,20 @@
+[
+{
+  "name":"Río Guejar",
+  "shortDescription":"Maravilla natural. Ecoturismo",
+  "review":"4/5",
+  "image":"@drawable/guejar"
+},
+{
+  "name":"Caño Cristales",
+  "shortDescription":"Maravilla natural. Ecoturismo",
+  "review":"5/5",
+  "image":"@drawable/cristales"
+},
+{
+  "name":"Ombligo de Colombia",
+  "shortDescription":"Sitio de interés. Turismo cultural",
+  "review":"3/5",
+  "image":"@drawable/ombligo"
+},
+]
