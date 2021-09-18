@@ -17,4 +17,22 @@
   "review":"3/5",
   "image":"@drawable/ombligo"
 },
+  {
+    "name":"Termales del Ruiz",
+    "shortDescription":"Termales Volcánicos. Ecoturismo",
+    "review":"5/5",
+    "image":"@drawable/termalesdelruiz"
+  },
+  {
+    "name":"Nevado del Ruiz",
+    "shortDescription":"Maravilla natural. Ecoturismo",
+    "review":"5/5",
+    "image":"@drawable/nevado"
+  },
+  {
+    "name":"Parque del Café",
+    "shortDescription":"Parque de atracciones temático. Turismo cultural",
+    "review":"5/5",
+    "image":"@drawable/parquedelcafe"
+  }
 ]
