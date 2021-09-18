@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         recycler = findViewById(R.id.poi_list)
         setupRecyclerView()
         generatePoi()
-//        mPoi = createMockContacts()
     }
 
     /**
@@ -31,10 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         mPoi = arrayListOf()
         recycler.addItemDecoration(
-            DividerItemDecoration(
-                this,
-                DividerItemDecoration.VERTICAL
-            )
+            DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         )
         mAdapter = Adapter(mPoi)
         recycler.adapter = mAdapter
@@ -59,13 +55,11 @@ class MainActivity : AppCompatActivity() {
                 Log.d(TAG, "generateContacts: $poi")
                 mPoi.add(poi)
             }
-
             mAdapter.notifyDataSetChanged()
         } catch (e: JSONException) {
             e.printStackTrace()
         }
     }
-
 
     /**
      * Reads a file from the assets directory and returns it as a string.
@@ -80,12 +74,10 @@ class MainActivity : AppCompatActivity() {
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             inputStream.close()
-
             poiString = String(buffer)
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
         return poiString
     }
 
