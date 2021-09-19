@@ -34,5 +34,23 @@
     "shortDescription":"Parque de atracciones temático. Turismo cultural",
     "review":"5/5",
     "image":"@drawable/parquedelcafe"
+  },
+  {
+    "name":"Tibasosa",
+    "shortDescription":"Parque de atracciones extremas. Turismo extremo",
+    "review":"5/5",
+    "image":"@drawable/tibasosa"
+  },
+  {
+    "name":"Villa de Leyva",
+    "shortDescription":"Museos  y sitios de Interes. Turismo cultural",
+    "review":"5/5",
+    "image":"@drawable/villa"
+  },
+  {
+    "name":"Mongui",
+    "shortDescription":"Fabrica de Balones. Turismo cultural",
+    "review":"5/5",
+    "image":"@drawable/mongi"
   }
 ]
