@@ -1,5 +1,6 @@
 package com.example.colombiadiversa
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,12 +18,17 @@ class Adapter(
         return ViewHolder(view)
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val (name, shortDescription, review, image) = mPoi[position]
         holder.nameLabel.text = name
         holder.shortDescriptionLabel.text = shortDescription
         holder.reviewLabel.text = review
-        holder.imageLabel.text = image
+        holder.imageLabel.setImageDrawable(holder.itemView.context.getDrawable(holder.itemView.resources.getIdentifier(
+            image,
+            "drawable",
+            holder.itemView.context.packageName
+        )))
     }
 
     override fun getItemCount(): Int {
