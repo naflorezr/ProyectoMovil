@@ -52,5 +52,28 @@
     "shortDescription":"Fabrica de Balones. Turismo cultural",
     "review":"5/5",
     "image":"@drawable/mongi"
+  },
+  {
+    "name":"Monserrate",
+    "shortDescription":"Altura y fe de la capital",
+    "review":"5/5",
+    "image":"@drawable/monserrat"
+  },
+  {
+    "name":"Maloka",
+    "shortDescription":"Museo interactivo de ciencia y tecnologia",
+    "review":"5/5",
+    "image":"@drawable/maloka"
+  },
+  {
+    "name":"Parque simon Bolivar",
+    "shortDescription":"Parque urbano y pulmon de Bogota",
+    "review":"5/5",
+    "image":"@drawable/simon"
   }
+
+
+
+
+
 ]
