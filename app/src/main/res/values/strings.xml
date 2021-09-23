@@ -15,4 +15,12 @@
     <string name="temperatureTermales">min 3°C max 10°C</string>
     <string name="LocationTermales">Manizales - Caldas</string>
     <string name="ActivitiesTermales">Piscina termal - Sendero Ecológico - Camino de los colibries</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Configuracion</string>
+    <string name="check_box_1">Autorizar las notificaciones</string>
+    <string name="check_box_2">Sonido para las notificaciones</string>
+
+
 </resources>
