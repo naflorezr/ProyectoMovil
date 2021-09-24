@@ -1,8 +1,11 @@
 package com.example.colombiadiversa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import org.json.JSONArray
@@ -22,6 +25,23 @@ class MainActivity : AppCompatActivity() {
         recycler = findViewById(R.id.poi_list)
         setupRecyclerView()
         generatePoi()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.settings_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.action_settings ->{
+                val intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     /**
