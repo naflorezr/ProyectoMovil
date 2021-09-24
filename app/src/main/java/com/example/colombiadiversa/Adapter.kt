@@ -31,9 +31,8 @@ class Adapter(
         )))
     }
 
-    override fun getItemCount(): Int {
-        return mPoi.size
-    }
+    override fun getItemCount() = mPoi.size
+
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var nameLabel: TextView = itemView.findViewById(R.id.textView_name)
