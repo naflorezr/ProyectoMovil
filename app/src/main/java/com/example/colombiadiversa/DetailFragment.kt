@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 
-
 /**
  * A simple [Fragment] subclass.
  */
@@ -16,7 +15,6 @@ class DetailFragment : Fragment() {
 
     private lateinit var model: PoiViewModel
     private lateinit var nameView: TextView
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,17 +26,11 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        nameView = view.findViewById(R.id.name_text)
-
-        // nameView = view.findViewById(R.id.name_text)
+        nameView = view.findViewById(R.id.name)
         model = ViewModelProvider(requireActivity()).get(PoiViewModel::class.java)
         model.getSelected().observe(viewLifecycleOwner, { PoiItem ->
             nameView.text = PoiItem.name
-
             //observeLiveData()
-
         })
     }
-
 }

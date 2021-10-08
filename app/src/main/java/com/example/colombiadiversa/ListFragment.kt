@@ -11,7 +11,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 
-
 class ListFragment : Fragment() {
 
        private lateinit var mPoi: ArrayList<PoiItem>
@@ -45,19 +44,17 @@ class ListFragment : Fragment() {
             DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
         )
         mAdapter = Adapter(mPoi) { PoiItem ->
-            contactOnClick(PoiItem)
+            /*contactOnClick(PoiItem)*/
         }
 
         recycler.adapter = mAdapter
     }
 
-            private fun contactOnClick(poi: PoiItem) {
-            Log.d(TAG, "Click on: $poi")
-            model.select(poi)
-            findNavController().navigate(R.id.action_listFragment_to_detailFragment)
-
-            }
-
+    private fun contactOnClick(poi: PoiItem) {
+        Log.d(TAG, "Click on: $poi")
+        model.select(poi)
+        findNavController().navigate(R.id.action_listFragment_to_detailFragment)
+    }
 
     private fun createMockContacts(): java.util.ArrayList<PoiItem> {
         return arrayListOf(
