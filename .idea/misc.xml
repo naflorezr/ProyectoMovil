@@ -5,17 +5,14 @@
       <map>
         <entry key="..\:/Users/HNOS. PINEDA GONZALE/AndroidStudioProjects/ProyectoMovilS2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HNOS. PINEDA GONZALE/AndroidStudioProjects/ProyectoMovilS2/app/src/main/res/layout/activity_termales.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
-        <entry key="..\:/proyectos/AndroidStudioProjects/ProyectoMovil/app/src/main/res/menu/settings_menu.xml" value="0.1" />
-        <entry key="..\:/proyectos/AndroidStudioProjects/ProyectoMovil/app/src/main/res/xml/root_preferences.xml" value="0.36277173913043476" />
-        <entry key="..\:/proyectos/ProyectoMovil/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
-        <entry key="..\:/proyectos/ProyectoMovil/app/src/main/res/layout/fragment_detail.xml" value="0.20520833333333333" />
-        <entry key="..\:/proyectos/ProyectoMovil/app/src/main/res/layout/fragment_list.xml" value="0.20520833333333333" />
-        <entry key="app/src/main/res/layout/activity_guatapuri.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_rioguejar.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_termales.xml" value="0.19791666666666666" />
-        <entry key="app/src/main/res/layout/poi_list_item.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/activity_guatapuri.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/activity_rioguejar.xml" value="0.264" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/activity_termales.xml" value="0.264" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/fragment_detail.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/fragment_list.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/poi_list_item.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/NATAA/Desktop/MinTic C4b/DesarrolloMovil/ColombiaDiversa/app/src/main/res/layout/settings_activity.xml" value="0.24728260869565216" />
       </map>
     </option>
   </component>
