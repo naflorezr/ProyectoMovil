@@ -73,11 +73,11 @@
         android:id="@+id/imageView"
         android:layout_width="378dp"
         android:layout_height="219dp"
+        android:contentDescription="@string/Description_title"
         app:srcCompat="@drawable/guejar"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="48dp"
-        android:contentDescription="Image" />
+        tools:layout_editor_absoluteY="48dp" />
 
     <TextView
         android:id="@+id/name"
