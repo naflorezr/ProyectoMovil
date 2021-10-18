@@ -2,10 +2,14 @@
   "posts": [
     {
       "id": 1,
-      "title": "hello"
+      "title": "RioGuejar"
+    },
+    {
+      "id": 2,
+      "title": "Caño Cristales"
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "ColombiaDiversa"
   }
 }
