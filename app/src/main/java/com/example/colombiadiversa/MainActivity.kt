@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
-            R.id.action_settings ->{
+            R.id.settingsFragment ->{
                 val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
             }

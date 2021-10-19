@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/poiListFragment">
+
+    <fragment
+        android:id="@+id/poiListFragment"
+        android:name="com.example.colombiadiversa.PoiListFragment"
+        android:label="fragment_poi_list"
+        tools:layout="@layout/fragment_poi_list" >
+        <action
+            android:id="@+id/action_poiListFragment_to_poiDetailFragment"
+            app:destination="@id/poiDetailFragment" />
+        <action
+            android:id="@+id/action_poiListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/poiDetailFragment"
+        android:name="com.example.colombiadiversa.PoiDetailFragment"
+        android:label="fragment_poi_detail"
+        tools:layout="@layout/fragment_poi_detail" >
+        <action
+            android:id="@+id/action_poiDetailFragment_to_poiListFragment"
+            app:destination="@id/poiListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.colombiadiversa.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+</navigation>
