@@ -14,7 +14,8 @@ import org.json.JSONException
 import java.io.IOException
 import android.view.Menu
 import android.view.MenuItem
-
+import android.widget.Toast
+import androidx.navigation.Navigation
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -27,7 +28,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [PoiListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class PoiListFragment : Fragment() {
+class PoiListFragment : Fragment(), Adapter.OnItemClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -69,7 +70,7 @@ class PoiListFragment : Fragment() {
         recycler.addItemDecoration(
             DividerItemDecoration(activity, DividerItemDecoration.VERTICAL)
         )
-        mAdapter = Adapter(mPoi)
+        mAdapter = Adapter(mPoi,this)
         recycler.adapter = mAdapter
     }
 
@@ -116,6 +117,10 @@ class PoiListFragment : Fragment() {
             e.printStackTrace()
         }
         return poiString
+    }
+
+    override fun onItemCLick(position: Int) {
+        Toast.makeText(requireActivity(), "Item $position clicked", Toast.LENGTH_SHORT).show()
     }
 
     companion object {
