@@ -119,7 +119,7 @@ class PoiListFragment : Fragment() {
     }
 
     companion object {
-        private val TAG = MainActivity::class.java.simpleName
+        private val TAG = SingleActivity::class.java.simpleName
     }
 
 /*    companion object {

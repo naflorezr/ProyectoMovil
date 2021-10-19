@@ -29,6 +29,7 @@ class SingleActivity: AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(findNavController(R.id.myNavHostFragment))
                 || super.onOptionsItemSelected(item)
+
     }
 
 }
