@@ -6,11 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 
 class Adapter(
-    private val mPoi: ArrayList<PoiItem>
+    private val mPoi: ArrayList<PoiItem>,
+    private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,15 +31,35 @@ class Adapter(
             "drawable",
             holder.itemView.context.packageName
         )))
+
+        holder.itemView.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_poiListFragment_to_poiDetailFragment)
+        )
     }
 
     override fun getItemCount() = mPoi.size
 
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
+    View.OnClickListener{
         var nameLabel: TextView = itemView.findViewById(R.id.textView_name)
         var shortDescriptionLabel: TextView = itemView.findViewById(R.id.textView_shortDescription)
         var reviewLabel: TextView = itemView.findViewById(R.id.textView_review)
         var imageLabel: ImageView = itemView.findViewById(R.id.imageView2)
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(p0: View?) {
+            val position: Int = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                listener.onItemCLick(position)
+            }
+        }
+    }
+
+    interface OnItemClickListener {
+        fun onItemCLick(position: Int)
     }
 }
