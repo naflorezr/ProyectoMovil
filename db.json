@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "RioGuejar"
+    },
+    {
+      "id": 2,
+      "title": "Caño Cristales"
+    }
+  ],
+  "profile": {
+    "name": "ColombiaDiversa"
+  }
+}

@@ -17,14 +17,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mPoi: ArrayList<PoiItem>
     private lateinit var mAdapter: Adapter
     private lateinit var recycler: RecyclerView
+    private lateinit var model: PoiViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        recycler = findViewById(R.id.poi_list)
-        setupRecyclerView()
-        generatePoi()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -39,11 +36,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
             }
-
         }
         return super.onOptionsItemSelected(item)
     }
-
+/*
     /**
      * Sets up the RecyclerView: empty data set, item dividers, swipe to delete.
      */
@@ -104,4 +100,5 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private val TAG = MainActivity::class.java.simpleName
     }
+*/
 }
