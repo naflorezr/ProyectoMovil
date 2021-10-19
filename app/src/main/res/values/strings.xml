@@ -18,7 +18,7 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Configuracion</string>
+    <string name="messages_header">Configuración</string>
     <string name="check_box_1">Autorizar las notificaciones</string>
     <string name="check_box_2">Sonido para las notificaciones</string>
     <!-- TODO: Remove or change this placeholder text -->
