@@ -1,5 +1,6 @@
 package com.example.colombiadiversa
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -86,6 +87,10 @@ class PoiDetailFragment : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_poiListFragment, null)
         )
 
+        view.findViewById<Button>(R.id.button2)?.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_poiListFragment, null)
+        )
+
     }
 
     companion object {
@@ -108,3 +113,4 @@ class PoiDetailFragment : Fragment() {
             }
     }
 }
+
