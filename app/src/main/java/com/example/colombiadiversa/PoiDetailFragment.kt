@@ -1,12 +1,18 @@
 package com.example.colombiadiversa
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import org.json.JSONArray
+import org.json.JSONObject
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,6 +37,8 @@ class PoiDetailFragment : Fragment() {
         }
     }
 
+    private var sharingViewModel: SharingViewModel? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,6 +49,38 @@ class PoiDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+/*        // Get the ViewModel.
+        model = ViewModelProviders.of(this).get(NameViewModel::class.java)
+
+
+        // Create the observer which updates the UI.
+        val nameObserver = Observer<String> { newName ->
+            // Update the UI, in this case, a TextView.
+            nameTextView.text = newName
+        }
+
+        // Observe the LiveData, passing in this activity as the LifecycleOwner and the observer.
+        model.currentName.observe(this, nameObserver)*/
+
+        sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
+
+
+        val nameObserver: Observer<Any> = Observer<Any> { poiInfo ->
+
+            val poiData: JSONObject = poiInfo as JSONObject
+
+            view.findViewById<TextView>(R.id.name).text = poiData.getString("name")
+            view.findViewById<ImageView>(R.id.imageView).setImageResource(resources.getIdentifier(
+                poiData.getString("image"), "drawable", this.context?.packageName
+            ))
+            view.findViewById<TextView>(R.id.description).text = poiData.getString("info")
+            view.findViewById<TextView>(R.id.location).text = poiData.getString("location")
+            view.findViewById<TextView>(R.id.temperature).text = poiData.getString("temperature")
+            view.findViewById<TextView>(R.id.activities).text = poiData.getString("activities")
+        }
+
+        sharingViewModel!!.getPoiClickedData()?.observe(viewLifecycleOwner, nameObserver)
 
         view.findViewById<Button>(R.id.button)?.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_poiListFragment, null)
