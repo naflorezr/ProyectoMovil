@@ -15,6 +15,7 @@ import androidx.navigation.ui.navigateUp
 
 class SingleActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_ColombiaDiversa)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.single_activity)
 
