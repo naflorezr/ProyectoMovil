@@ -3,72 +3,120 @@
     "name":"Río Guejar",
     "shortDescription":"Maravilla natural. Ecoturismo.",
     "review":"Puntuación: 4/5",
-    "image":"guejar"
+    "image":"guejar",
+    "info": "Río de aguas claras y lecho rocoso enclavado en un cañon formado en la Sierra de La Macarena. Lugar de naturaleza y belleza exuberante.",
+    "location":"Mesetas y San Juan de Arama - Meta",
+    "temperature": "Entre 20 y 35°C",
+    "activities":"Bañarse en el río, canotaje, pesca deportiva."
   },
   {
     "name":"Caño Cristales",
     "shortDescription":"Maravilla natural. Ecoturismo.",
     "review":"Puntuación: 5/5",
-    "image":"cristales"
+    "image":"cristales",
+    "info":"Río de aguas claras en que proliferan algas de diversos colores, generando un mosaico de colores en el lecho del río.",
+    "location":"La Macarena - Meta",
+    "temperature": "Entre 20 y 35°C",
+    "activities":"Caminata ecológica por la rivera del Río Caño cristales"
   },
   {
     "name":"Ombligo de Colombia",
     "shortDescription":"Sitio de interés. Turismo cultural.",
     "review":"Puntuación: 3/5",
-    "image":"ombligo"
+    "image":"ombligo",
+    "info":"Centro geográfico de Colombia y transición entre la orinoquía bien drenada y la mal drenada, presentandose el inicio de una inmensa meseta natural.",
+    "location":"Puerto Lopez - Meta",
+    "temperature": "Entre 20 y 35°C",
+    "activities":"Obelisco, mirador."
   },
   {
     "name":"Termales del Ruiz",
     "shortDescription":"Termales Volcánicos. Ecoturismo.",
     "review":"Puntuación: 5/5",
-    "image":"termalesdelruiz"
+    "image":"termalesdelruiz",
+    "info":"Ubicados en el Parque Nacional Natural de los Nevados, a 3500 metros de altura sobre el nivel del mar, a sólo 10 km del Nevado del Ruíz y 36 km de Manizales. Con una ubicación privilegiada y un paisaje impactante por la belleza natural que posee, espectacular vista a la ciudad de Manizales, y una noche de firmamento con variedad de azules lleno de estrellas en conjunto con la luna a un paso de las nubes.",
+    "location":"Manizales - Caldas",
+    "temperature": "min 3°C max 10°C",
+    "activities":"Piscina termal - Sendero Ecológico - Camino de los colibries"
   },
   {
     "name":"Nevado del Ruiz",
     "shortDescription":"Maravilla natural. Ecoturismo.",
     "review":"Puntuación: 5/5",
-    "image":"nevado"
+    "image":"nevado",
+    "info":"El recorrido hacia el Nevado del Ruiz, desde Manizales, está colmado de magia y naturaleza. El contacto con la tierra a más de 5.000 m.s.n.m. se roba el aliento de los visitantes para inculcarles humildad y entregarles la grandeza de la montaña.",
+    "location":"Manizales - Caldas",
+    "temperature": "min -5°C max 7°C",
+    "activities":"Lago Negro - Nevado del Ruiz"
   },
   {
     "name":"Parque del Café",
     "shortDescription":"Parque de atracciones temático. Turismo cultural.",
     "review":"Puntuación: 5/5",
-    "image":"parquedelcafe"
+    "image":"parquedelcafe",
+    "info":"Ubicados en el departamento del Quindío, centro occidente del país, inmersos en el mar de verdes del Eje Cafetero colombiano. Considerado como uno de los parques temáticos más importantes de Latinoamérica, gracias a que somos un lugar con alma, que rinde homenaje a las más de quinientas mil familias cafeteras de nuestro país, una mezcla perfecta entre diversión, paisaje, adrenalina, café, arte, cultura cafetera, atracciones, tradición, arquitectura, gastronomía, aventura, alegría, sano esparcimiento y muchas experiencias que encontrarás en un área de  58 hectáreas con más de 20 atracciones mecánicas y un sinnúmero de atractivos culturales.",
+    "location":"Montenegro - Quindío",
+    "temperature": "min 18°C max 28°C",
+    "activities":"Montaña Rusa - Sendero del Café - Museo de Arqueología"
   },
   {
     "name":"Tibasosa",
     "shortDescription":"Parque de atracciones extremas. Turismo extremo.",
     "review":"Puntuación: 5/5",
-    "image":"tibasosa"
+    "image":"tibasosa",
+    "info":"Tibasosa es un municipio colombiano del departamento de Boyacá, situado en el centro-oriente de Colombia, en la región del Alto Chicamocha. Cuenta, según los datos del censo de 2005, con una población de 12 463 habitantes. Tibasosa hace parte de la provincia del Sugamuxi. En el plano económico, se destaca como uno de los principales productores de la feijoa a nivel nacional, así como de sus derivados.",
+    "location":"Boyacá",
+    "temperature": "min 5°C max 14°C",
+    "activities":"Museo Religioso, Parque Guatica, Capilla."
   },
   {
     "name":"Villa de Leyva",
     "shortDescription":"Museos  y sitios de Interes. Turismo cultural.",
     "review":"Puntuación: 5/5",
-    "image":"villa"
+    "image":"villa",
+    "info":"Villa de Leyva es un municipio colombiano ubicado en la provincia de Ricaurte del departamento de Boyacá. Está ubicado a 40 km al occidente de Tunja, capital del departamento, y a 165 km de Bogotá, capital del país. Fue fundado en 1572 con el nombre de Villa de Santa María de Leyva y reconocido como monumento nacional en 1954.",
+    "location":"Boyacá",
+    "temperature": "min 4°C max 13°C",
+    "activities":"Museo Arqueologico, Monasterio  santo Ecceomo, Jardin Desierto. "
   },
   {
     "name":"Mongui",
     "shortDescription":"Fabrica de Balones. Turismo cultural.",
     "review":"Puntuación: 5/5",
-    "image":"mongi"
+    "image":"mongi",
+    "info":"Monguí es un municipio colombiano ubicado en la provincia de Sugamuxi en el departamento de Boyacá. Está situado a unos 97 km de la ciudad de Tunja, capital del departamento. Hace parte de la Red de pueblos patrimonio de Colombia.",
+    "location":"Boyacá",
+    "temperature": "min 8°C max 16°C",
+    "activities":"Puente real calicanto, Peña de otí, Paramo de ocetá."
   },
   {
     "name":"Monserrate",
     "shortDescription":"Altura y fe de la capital. Turisto cultural.",
     "review":"Puntuación: 5/5",
-    "image":"monserrat"
+    "image":"monserrat",
+    "info":" Monserrate es el lugar sagrado más visitado de Bogotá, encargado de custodiar la ciudad. A él se puede llegar a pié, en teleférico o en funicular. Su Santuario del Señor Caído, de gran valor religioso, es visitado por miles de peregrinos católicos. Cuenta con excelentes restaurantes, brinda la posibilidad a sus visitantes de adquirir hermosas artesanías y ofrece una maravillosa vista panorámica de toda la ciudad y sus alrededores.",
+    "location":"Bogotá D.C.",
+    "temperature": "Promedio mínimo 3°C, Promedio máximo 15°C",
+    "activities":"Santuario Monserrate. Pasillo de restaurantes. Camino ecologico."
   },
   {
     "name":"Maloka",
     "shortDescription":"Museo interactivo de ciencia y tecnologia. Turisto cultural.",
     "review":"Puntuación: 5/5",
-    "image":"maloka"
+    "image":"maloka",
+    "info":"Es una corporación de cobertura nacional y proyección internacional, con carácter cultural, educativo, científico, tecnológico, recreativo y turístico, que tiene como fin la construcción de una sociedad basada en el conocimiento y el aprendizaje, a través del diseño de múltiples estrategias que denomina de Apropiación social de la ciencia, la tecnología y la innovación.",
+    "location":"Bogotá D.C.",
+    "temperature": "Promedio mínimo 3°C, Promedio máximo 15°C",
+    "activities":"Cine domo. Sala digital. Experiencias interactivas."
   },
   {
-    "name":"Parque simon Bolivar",
+    "name":"Parque Simon Bolivar",
     "shortDescription":"Parque urbano y pulmon de Bogota. Turisto cultural.",
     "review":"Puntuación: 5/5",
-    "image":"simon"
+    "image":"simon",
+    "info":"El parque metropolitano Simón Bolívar es el más grande e importante de la ciudad por varias razones: su estratégica ubicación en el corazón de Bogotá; sus amplios espacios verdes acompañados de un innumerable número de árboles o por la cantidad y variedad de los escenarios que lo conforman.",
+    "location":"Bogotá D.C.",
+    "temperature": "Promedio mínimo 3°C, Promedio máximo 15°C",
+    "activities":"Ciclo via. Plaza de eventos. Isla. Lago"
   }
 ]

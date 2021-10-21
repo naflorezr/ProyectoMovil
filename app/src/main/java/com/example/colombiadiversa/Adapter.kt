@@ -31,10 +31,6 @@ class Adapter(
             "drawable",
             holder.itemView.context.packageName
         )))
-
-        holder.itemView.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_poiListFragment_to_poiDetailFragment)
-        )
     }
 
     override fun getItemCount() = mPoi.size
