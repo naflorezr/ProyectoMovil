@@ -88,7 +88,7 @@ class PoiDetailFragment : Fragment() {
         )
 
         view.findViewById<Button>(R.id.button2)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_poiListFragment, null)
+            Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_mapsActivity, null)
         )
 
     }
