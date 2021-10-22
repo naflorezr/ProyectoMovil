@@ -21,9 +21,7 @@ class PoiDetailFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
-
     }
 
     override fun onCreateView(
@@ -36,11 +34,8 @@ class PoiDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val nameObserver: Observer<Any> = Observer<Any> { poiInfo ->
-
             val poiData: JSONObject = poiInfo as JSONObject
-
             view.findViewById<TextView>(R.id.name).text = poiData.getString("name")
             view.findViewById<ImageView>(R.id.imageView).setImageResource(resources.getIdentifier(
                 poiData.getString("image"), "drawable", this.context?.packageName
@@ -60,7 +55,5 @@ class PoiDetailFragment : Fragment() {
         view.findViewById<Button>(R.id.button2)?.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_mapsFragment, null)
         )
-
     }
-
 }

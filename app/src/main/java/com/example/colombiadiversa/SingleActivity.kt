@@ -18,19 +18,15 @@ class SingleActivity: AppCompatActivity() {
         setTheme(R.style.Theme_ColombiaDiversa)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.single_activity)
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.settings_menu, menu)
         return true
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(findNavController(R.id.myNavHostFragment))
                 || super.onOptionsItemSelected(item)
-
     }
-
 }
