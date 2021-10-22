@@ -28,6 +28,8 @@ class PoiListFragment : Fragment(), Adapter.OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
+
     }
 
     override fun onCreateView(
@@ -45,8 +47,6 @@ class PoiListFragment : Fragment(), Adapter.OnItemClickListener {
         recycler = view.findViewById(R.id.frag_poi_list)
         setupRecyclerView()
         generatePoi()
-
-        sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
 
     }
 
