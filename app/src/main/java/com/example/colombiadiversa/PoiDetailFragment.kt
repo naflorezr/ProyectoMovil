@@ -17,6 +17,7 @@ import org.json.JSONObject
 
 class PoiDetailFragment : Fragment() {
 
+    private var sharingViewModel: SharingViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +25,6 @@ class PoiDetailFragment : Fragment() {
         sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
 
     }
-
-    private var sharingViewModel: SharingViewModel? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -59,7 +58,7 @@ class PoiDetailFragment : Fragment() {
         )
 
         view.findViewById<Button>(R.id.button2)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_mapsActivity, null)
+            Navigation.createNavigateOnClickListener(R.id.action_poiDetailFragment_to_mapsFragment, null)
         )
 
     }

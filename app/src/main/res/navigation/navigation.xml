@@ -28,8 +28,8 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
         <action
-            android:id="@+id/action_poiDetailFragment_to_mapsActivity"
-            app:destination="@id/mapsActivity"
+            android:id="@+id/action_poiDetailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
@@ -40,10 +40,10 @@
         android:name="com.example.colombiadiversa.SettingsFragment"
         android:label="SettingsFragment"
         tools:layout="@layout/fragment_settings"/>
-    <activity
-        android:id="@+id/mapsActivity"
-        android:name="com.example.colombiadiversa.MapsActivity"
-        android:label="activity_maps"
-        tools:layout="@layout/activity_maps" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.colombiadiversa.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 </navigation>
