@@ -17,7 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener
 
-class MapsFragment : Fragment() {
+class MapsFragment : Fragment(), GoogleMap.OnMarkerClickListener {
 
     private val callback = OnMapReadyCallback { googleMap ->
         /*
@@ -32,27 +32,9 @@ class MapsFragment : Fragment() {
         val sydney = LatLng(4.658480, -74.130581)
         googleMap.addMarker(MarkerOptions().position(sydney).title("POI"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-
-/*        googleMap.setOnMarkerClickListener(this)
-        googleMap.uiSettings.isZoomControlsEnabled= true*/
-
+        googleMap.setOnMarkerClickListener (this)
+        googleMap.uiSettings.isZoomControlsEnabled=true
     }
-
-    // private lateinit var mMap: GoogleMap
-    // private lateinit var binding: ActivityMapsBinding
-
-/*    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        binding = ActivityMapsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
-
-    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -68,22 +50,6 @@ class MapsFragment : Fragment() {
         mapFragment?.getMapAsync(callback)
     }
 
-/*    fun onMarkerClick(p0: Marker?) = false
-
-    fun onMapReady(p0: GoogleMap?) {
-    }*/
-
-/*    override fun onMapReady(googleMap: GoogleMap) {
-        mMap = googleMap
-
-        val marca = LatLng(4.658480, -74.130581)
-        mMap.addMarker(MarkerOptions().position(marca).title("POI"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(marca))
-
-        mMap.setOnMarkerClickListener(this)
-        mMap.uiSettings.isZoomControlsEnabled= true
-    }
-
-    override fun onMarkerClick(p0: Marker?) = false*/
+    override fun onMarkerClick(p0: Marker?) = false
 
 }

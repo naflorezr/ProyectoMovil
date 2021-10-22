@@ -22,32 +22,25 @@ class PoiListFragment : Fragment(), Adapter.OnItemClickListener {
     private lateinit var mAdapter: Adapter
     private lateinit var recycler: RecyclerView
 
-
     private var sharingViewModel: SharingViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         sharingViewModel = ViewModelProvider(requireActivity())[SharingViewModel::class.java]
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(layout.fragment_poi_list, container, false)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         recycler = view.findViewById(R.id.frag_poi_list)
         setupRecyclerView()
         generatePoi()
-
     }
 
     private fun setupRecyclerView() {
@@ -111,13 +104,11 @@ class PoiListFragment : Fragment(), Adapter.OnItemClickListener {
                 popExit = R.anim.slide_out_right
             }
         }
-
         findNavController().navigate(R.id.poiDetailFragment, null, options)
     }
 
     companion object {
         private val TAG = SingleActivity::class.java.simpleName
     }
-
 
 }
